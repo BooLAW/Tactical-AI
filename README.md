@@ -64,7 +64,7 @@ How to use them in our game code, having a FSM(finite state machine) will let us
 
 5. **Implement the NPC brain** : If we want the AI work properly our entities need to send to the FSM their current state, so we will have a FSM() function inside all the entities that will need AI. 
 ## Download the Exercise
-# Before Start
+### Before Start
 To make the exercise open the handout and complete the TODOs that are commented, if you need help there is a Solution folder.
 Any doubt or improvement contact me : paubv1997@gmail.com
 [Download the .RAR](https://github.com/BooLAW/Tactical-AI/releases)
