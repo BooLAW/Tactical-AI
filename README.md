@@ -60,11 +60,10 @@ How to use them in our game code, having a FSM(finite state machine) will let us
 
 4. **Implement a Finite-State Machine** : To begin with the implementation we should make a FSM class that will manage the states, so we will need one variable to store the current state (curr_state) and a function to modify it.
 
-//Insert photo of the class
+![](http://imgur.com/ePZT3nE.png)
 
 5. **Implement the NPC brain** : If we want the AI work properly our entities need to send to the FSM their current state, so we will have a FSM() function inside all the entities that will need AI. 
 
-//insert photo of a Entity 
 ## Interesting Links:
 
 [State Machines Article](https://gamedevelopment.tutsplus.com/tutorials/finite-state-machines-theory-and-implementation--gamedev-11867)
