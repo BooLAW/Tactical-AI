@@ -43,15 +43,8 @@ public:
 	ENTITYTYPE type;
 };
 //TODO 1
-	//make an enum with the states
-enum state {
-	Wander,
-	Attack,
-	Aid,
-	_NULL
-};
-//TODO 2
-	//Make an enemy with FSM
+	//make an enum with the states wander - attack - aid - null
+
 class FSM_Enemy : public  Entity {
 public:
 	FSM_Enemy();
@@ -59,21 +52,19 @@ public:
 	void Update(float dt);
 	void OnCollision(Collider* c1, Collider* c2);
 	
-	state SetState();
-	void SelectFunction();
-	
-	void WanderEnemy();
-	void AttackEnemy();
-	void AidEnemy();
+//TODO 2
+	//Make Functions for each state, another to select this functions and another one to change the states of 
+	//at
 public:
-	state current_state;
-	int move_state = 0;
-	uint counter = 0;
+	//TODO 1
+		//stablish a state property 
 	bool x_wander = true;
-	uint hp = 6;
 	bool is_coll;
 	bool in_aid;
 	bool player_near = false;
+	uint hp = 6;
+	int move_state = 0;
+	uint counter = 0;
 	Collider* collider = nullptr;
 	Collider* attack_coll = nullptr;
 	Collider* affecting_area = nullptr; 

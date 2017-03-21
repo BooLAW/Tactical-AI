@@ -25,7 +25,6 @@ bool j1Player::Start()
 
 	// Setting Up all SDL_Rects x is every 102p, y is every 110p
 	link_coll = App->collisions->AddCollider(LINK_RECT, COLLIDER_PLAYER, this); 
-	//TODO 
 		//add area collider
 	//Idle
 	{
@@ -404,7 +403,7 @@ bool j1Player::Update(float dt)
 	//!_Graphics
 
 	// MODIFY COLLISION -------------------------------------------------
-	//TODO 
+
 	//Set the position of the area collider
 		link_coll->SetPos(pos.x , pos.y );
 	return ret;
